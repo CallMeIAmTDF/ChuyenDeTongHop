@@ -1,0 +1,73 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "edu_v2"
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/edudb?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
+  kafka:
+    bootstrap-servers: localhost:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: notification-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+#config upload file
+  servlet:
+    multipart:
+      #default = 1MB
+      max-file-size: 5MB
+      #default = 10 MB (form data)
+      max-request-size: 50MB
+
+auth:
+  outbound:
+    identity:
+      client-id: "286299218562-ur2avuo3vhf2hbsbuga3pkr27ejqhf67.apps.googleusercontent.com"
+      client-secret: "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"
+      redirect-uri: "http://localhost:3000/authenticate"
+  jwt:
+    accessSignerKey: "1TjXchw5FloESb63Kc+DFhTARvpWL4jUGCwfGWxuG5SIf/1y/LgJxHnMqaF6A/ij"
+    refreshSignerKey: "QXx7MQCEsX5C7d4nqSoZA2sBcyaSl9WN9ZJfkOXWwaKMopFllv4kcek/RrVR6m+s"
+    valid-duration: 86400 # 1 day (second)
+    refreshable-duration: 2592000 # 30 day (second)
+  verify:
+    register-code-duration: 86400000 # 24 * 60 * 60 * 1000 = 86400000 milli  --- 1 day
+    forgot-password-code-duration: 86400000 # 24 * 60 * 60 * 1000 = 86400000 milli  --- 1 day
+
+# Mail
+brevo:
+  api-key: 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
+
+api:
+  verify-register: "http://localhost:3000/verify/register?code="
+  verify-forgot-password: "http://localhost:3000/users/password/edit?code="
+
+redis:
+  host: localhost
+  port: 6379
+
+app:
+  upload-file:
+    base-uri: file:///D:/upload/
+
+GEMINI_API_KEY: "AIzaSyA3AO1s07NETxVWTGdRmiarO_pp58Tag20"
+
+GROQ_KEY: "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"
+
+OPENROUTER: "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"

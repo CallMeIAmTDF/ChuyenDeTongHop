@@ -1,0 +1,14 @@
+package com.huce.edu_v2.util.constant;
+
+public enum GameEnum {
+	USER_IN_OTHER_ROOM,
+	JOIN_ROOM_SUCCESSFULLY,
+	END,
+	ROOM_NOT_EXISTS,
+	CONTINUE,
+	WORDS_OF_GAME,
+	COUNTER,
+	ROOM_MESSAGE,
+	PLAYER_INFO,
+	QUIT
+}
