@@ -1,0 +1,131 @@
+import { StyleSheet } from "react-native";
+
+export const rankStyles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: "#ffffff",
+    },
+    header: {
+      height: 65,
+      backgroundColor: "#316BA8",
+      // justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "row",
+      // borderWidth: 1,
+    },
+    headerTitle: {
+      flex: 1,
+      fontSize: 24,
+      fontWeight: "bold",
+      color: "white",
+      // borderWidth: 1,
+      marginEnd: 50,
+      textAlign: "center",
+    },
+    topContainer: {
+      backgroundColor: "#C7E9FF",
+      padding: 20,
+      paddingTop: 30,
+      borderBottomRightRadius: 40,
+      borderBottomLeftRadius: 40,
+      gap: 20,
+      paddingBottom: 40,
+    },
+    mainCardContainer: {
+      flexDirection: "row",
+      gap: 20,
+      justifyContent: "center",
+    },
+    mainCard: {
+      backgroundColor: "#61C0DD",
+      padding: 20,
+      alignItems: "center",
+      borderRadius: 20,
+      gap: 15,
+      paddingBottom: 30,
+      height: 170,
+    },
+    mainCardImage: {
+      width: 70,
+      height: 90,
+      borderRadius: 20,
+    },
+    mainCardTitle: {
+      color: "while",
+      fontSize: 17,
+      fontWeight: "700",
+    },
+    mainCardRankContainer: {
+      // backgroundColor: "#FFC107",
+      width: 40,
+      height: 40,
+      justifyContent: "center",
+      alignItems: "center",
+      borderRadius: 30,
+      position: "absolute",
+      bottom: -15,
+    },
+    mainCardRankContainerText: {
+      color: "while",
+    },
+    card: {
+      paddingHorizontal: 20,
+      paddingVertical: 10,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      borderWidth: 1,
+      borderColor: "#E0E0E0",
+      backgroundColor: "#FFFFFF",
+      borderRadius: 10,
+      marginVertical: 5,
+    },
+    cardDataContainer: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 10,
+    },
+    cardIndex: {
+      color: "#316BA8",
+      fontWeight: "bold",
+      // borderWidth:1,
+      width: 40,
+      textAlign: "center"
+    },
+    cardImage: {
+      width: 50,
+      height: 50,
+      borderRadius: 50,
+      marginLeft: 5,
+      // borderWidth: 1,
+    },
+    cardTitle: {
+      color: "#333333",
+      fontSize: 17,
+      // fontWeight: "500",
+      // borderWidth: 1
+    },
+    cardRankContainer: {},
+    cardRankTitle: {
+      color: "#FFC107",
+      fontWeight: "700",
+    },
+    cardbyme: {
+      // paddingHorizontal: 20,
+      paddingRight: 20,
+      paddingLeft: 30,
+      paddingVertical: 10,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      borderWidth: 1,
+      borderTopColor: "#E0E0E0",
+      backgroundColor: "#C7E9FF",
+      borderRadius: 5,
+    },
+    cardTitleByMe:{
+      fontSize: 16,
+      fontWeight: "700",
+      marginLeft: 10
+    },
+  });
