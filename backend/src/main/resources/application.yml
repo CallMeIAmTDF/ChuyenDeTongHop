@@ -52,7 +52,7 @@ auth:
 
 # Mail
 brevo:
-  api-key: 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
+  api-key: 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
 
 api:
   verify-register: "http://localhost:3000/verify/register?code="

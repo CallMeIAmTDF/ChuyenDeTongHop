@@ -1,0 +1,12 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="5.311999999999999"
+    stroke="#68696d" fill="none">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+        <circle cx="32" cy="32" r="25.74" stroke-linecap="round"></circle>
+        <path d="M43.38,38.63a13.54,13.54,0,0,1-11.46,6.61,13.51,13.51,0,0,1-11.3-6.34"
+            stroke-linecap="round"></path>
+        <circle cx="23.62" cy="25.5" r="1.12" stroke-linecap="round"></circle>
+        <circle cx="40.36" cy="25.5" r="1.12" stroke-linecap="round"></circle>
+    </g>
+</svg>
